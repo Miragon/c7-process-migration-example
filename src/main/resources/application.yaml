@@ -1,0 +1,37 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: '@project.artifactId@'
+  datasource:
+    url: "jdbc:h2:mem:testdb"
+    username: "user"
+    password: "password"
+    driver-class-name: "org.h2.Driver"
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+camunda:
+  bpm:
+    auto-deployment-enabled: true
+    job-executor-acquire-by-priority: true
+    generic-properties:
+      default-serialization-format: application/json
+      history-level: full
+      id-generator: strong
+      properties:
+        historyTimeToLive: '30'
+        history-cleanup-strategy: removalTimeBased
+        history-cleanup-batch-window-start-time: '22:00'
+        history-cleanup-batch-window-end-time: '06:00'
+        history-removal-time-strategy: end
+        history-cleanup-degree-of-parallelism: '4'
+        enable-exceptions-after-unhandled-bpmn-error: true
+    admin-user:
+      id: admin
+      password: admin
