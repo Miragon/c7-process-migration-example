@@ -1,0 +1,7 @@
+
+
+### C7 Migration Api
+POST http://localhost:8080/api/migration/c7
+
+### Community Plugin Migration
+POST http://localhost:8080/api/migration/community-plugin

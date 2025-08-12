@@ -1,4 +1,4 @@
-package io.miragon.c7processmigrationexample;
+package io.miragon.bpmn.engine;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
