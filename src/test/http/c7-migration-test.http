@@ -1,5 +1,3 @@
-
-
 ### C7 Migration Api
 POST http://localhost:8080/api/migration/c7
 
