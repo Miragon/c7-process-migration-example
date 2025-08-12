@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-public class UpgradeMainFromV1ToV2 {
+public class CommunityPluginUpgradeMainFromV1ToV2 {
 
     private final ProcessEngine processEngine;
     private final RuntimeService runtimeService;
