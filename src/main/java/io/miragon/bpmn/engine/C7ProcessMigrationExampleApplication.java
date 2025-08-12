@@ -1,4 +1,4 @@
-package io.miragon.c7processmigrationexample;
+package io.miragon.bpmn.engine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

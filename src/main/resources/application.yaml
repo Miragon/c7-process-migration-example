@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: '@project.artifactId@'
+    name: "c7-pi-migration-example"
   datasource:
     url: "jdbc:h2:mem:testdb"
     username: "user"
