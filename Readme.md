@@ -1,4 +1,7 @@
 # Camunda 7 Prozess Instanz Migration
+Dieses Repository implementiert die Migration von Prozessinstanzen in Camunda 7 auf zwei verschiedene Arten:
+- über die nativen Camunda Java Interfaces
+- mit Hilfe des Camunda Community Plugins [camunda-7-migration](https://github.com/camunda-community-hub/camunda-7-migration)
 
 https://docs.camunda.org/manual/latest/user-guide/process-engine/process-instance-migration/
 https://docs.camunda.io/docs/components/best-practices/operations/versioning-process-definitions/
@@ -9,7 +12,7 @@ https://docs.camunda.org/rest/camunda-bpm-platform/7.24-SNAPSHOT/#tag/Migration
 Wann immer Änderungen am Prozess vorgenommen wurden, wird dieser als neue Version in Camunda deployed. 
 Bestehende Instanzen dieses Prozesses laufen in der Version weiter, in der sie gestartet wurden. 
 Neue Prozesse werden mit der neuesten Version gestartet. 
-Ein Migrationsplan kann über die Camunda Schnittstellen erstellt werden (sowohl über Rest, als auch über direkt über Java Beans)
+Ein Migrationsplan kann über die Camunda Schnittstellen erstellt werden (sowohl über Rest, als auch direkt über Java Interfaces)
 
 ## Überlegungen
 
